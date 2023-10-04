@@ -1,0 +1,14 @@
+[build-system]
+requires = ["sip > 6"]
+build-backend = "sipbuild.api"
+
+[tool.sip.metadata]
+name = "cpp"
+version = "1.0"
+license = "GPLv3"
+
+[tool.sip.bindings.cpp]
+headers = ["cpp_lib.h"]
+libraries = ["cpp"]
+include-dirs = ["cpp_lib"]
+library-dirs = ["cpp_lib"]
